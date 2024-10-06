@@ -2,17 +2,13 @@
 
 namespace Core\Helpers;
 
-function truncate(string $string, int $lg_max = 150)
+
+function truncate(string $string, int $lg_max = 150): string
 {
-    if (strlen($string) > $lg_max) {
+    if (strlen($string) > $lg_max):
         $string = substr($string, 0, $lg_max);
         $last_space = strrpos($string, " ");
-
-        if ($last_space !== false) {
-            $string = substr($string, 0, $last_space);
-        }
-        $string .= "...";
-    }
-
+        return substr($string, 0, $last_space) . '...';
+    endif;
     return $string;
 }
