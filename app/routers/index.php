@@ -8,6 +8,6 @@ if (isset($_GET['posts'])) :
 
 
 else :
-    include_once '../app/controllers/pagesController.php';
-    \App\Controllers\PagesController\homeAction($connexion);
+    include_once '../app/controllers/postsController.php';
+    \App\Controllers\PostsController\homeAction($connexion);
 endif;

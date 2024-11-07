@@ -17,7 +17,7 @@
                     <!-- Post Headline End -->
 
                     <!-- Form Start -->
-                    <form action="">
+                    <form action="posts/add/insert.html" method="POST">
                         <div class="form-group">
                             <label for="title">Title</label>
                             <input
