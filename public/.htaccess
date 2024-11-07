@@ -30,6 +30,12 @@ RewriteRule ^posts/add/insert.html$ index.php?posts=addForm [L]
 
 RewriteRule ^posts/([1-9][0-9]*)/([a-z0-9\-]+)/delete.html$ index.php?posts=deleteForm&id=$1 [L]
 
+# ROUTE DE MODIFICATION D'UN POST: Affichage du formulaire
+# PATTERN: /posts/id/slug-du-post/edit/form.html
+# URL: ?posts=editForm
+
+RewriteRule ^posts/([1-9][0-9]*)/([a-z0-9\-]+)/edit/form.html$ index.php?posts=editForm&id=$1 [L]
+
 #---------------------------------------------------
 
 #--------------------------------------------------
