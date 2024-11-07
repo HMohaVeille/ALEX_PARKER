@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers\pagesController;
+namespace App\Controllers\PagesController;
 
 use \PDO;
 
@@ -13,6 +13,6 @@ function homeAction(PDO $connexion)
     global $content, $title;
     $title = "HomePage";
     ob_start();
-    include '../app/views/pages/home.php';
+    include '../app/views/posts/home.php';
     $content = ob_get_clean();
 }

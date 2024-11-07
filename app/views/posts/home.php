@@ -14,7 +14,7 @@
             <?php echo \Core\Helpers\truncate($post['text']) ?>
         </p>
         <a
-            href="single.html"
+            href="posts/<?php echo $post["id"]; ?>/<?php echo Core\Helpers\slugify($post['title']); ?>"
             class="
                         button button-style button-anim
                         fa fa-long-arrow-right
