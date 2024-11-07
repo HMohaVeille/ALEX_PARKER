@@ -1,4 +1,9 @@
 <div class="col-md-12 blog-post row">
+    <!-- ADD A POST -->
+    <div>
+        <a href="posts/add/form.html" type="button" class="btn btn-primary">Add a Post</a>
+    </div>
+    <!-- ADD A POST END -->
     <?php foreach ($posts as $post): ?>
         <div class="post-title">
             <a href="single.html">
@@ -20,4 +25,6 @@
                         fa fa-long-arrow-right
                       "><span>Read More</span></a>
     <?php endforeach; ?>
+
+    <?php include_once '../app/views/templates/partials/_nav.php'; ?>
 </div>

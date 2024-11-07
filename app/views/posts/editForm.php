@@ -17,10 +17,10 @@
                     <!-- Post Headline End -->
 
                     <!-- Form Start -->
-                    <form action="">
+                    <form action="posts/<?php echo $posts["id"]; ?>/<?php echo Core\Helpers\slugify($posts['title']); ?>/edit/update.html" method="POST">
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input
+                            <input value=<?php echo $posts['title']; ?>
                                 type="text"
                                 name="title"
                                 id="title"
@@ -34,7 +34,7 @@
                                 name="text"
                                 class="form-control"
                                 rows="5"
-                                placeholder="Enter your text here"></textarea>
+                                placeholder="Enter your text here"><?php echo $posts["text"]; ?></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlFile1"> Image</label>
@@ -47,7 +47,7 @@
                                 name="quote"
                                 class="form-control"
                                 rows="5"
-                                placeholder="Enter your quote here"></textarea>
+                                placeholder="Enter your quote here"><?php echo $posts["quote"]; ?></textarea>
                         </div>
                         <div class="form-group">
                             <label for="text">Category</label>

@@ -20,6 +20,7 @@ switch ($_GET['posts']):
     case 'editForm':
         \App\Controllers\PostsController\editFormAction($connexion, $_GET['id']);
         break;
-
-
+    case 'updateForm':
+        \App\Controllers\PostsController\updateFormAction($connexion, $_GET['id']);
+        break;
 endswitch;
